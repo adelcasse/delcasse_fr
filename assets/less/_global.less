@@ -1,0 +1,102 @@
+// Fonts
+// -------------------
+
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+// Social icons
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot');
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}
+
+
+// Navbar
+// -------------------
+.navbar-brand {
+  font-family: @navbar-default-brand-font-family;
+}
+
+.navbar-right {
+  font-size: 2em;
+}
+
+// Home page
+.presentation {
+  background-color: @brand-primary; 
+  padding-top: 20px;
+}
+
+.presentation .picture {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  -webkit-border-radius: 125px;
+  -moz-border-radius: 125px;
+  margin: auto;
+  background: url(../img/photo_delcasse.png) no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.presentation .text {
+  color: #fff;
+  text-align: justify;
+}
+
+.presentation .text a {
+  color: #fff;
+}
+.presentation .text h2 {
+  text-align: center;
+}
+
+.presentation .text h2 .mesuivre {
+  font-size: 0.7em;
+}
+
+.presentation .text h1 {
+  font-family: @navbar-default-brand-font-family;
+  text-align: center;
+}
+
+.presentation .text p img {
+  max-height: 50px;
+}
+
+.presentation .text p {
+  padding: 15px;
+  font-style: italic;
+}
+
+// Content
+.wrap {
+  margin-top: @navbar-height;
+}
